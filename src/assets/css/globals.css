@@ -1,5 +1,6 @@
 body{
-    font-family: "Inter", serif;
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
     font-style: normal;
     background-color: black;
     background-image: url('../img/background.png');
