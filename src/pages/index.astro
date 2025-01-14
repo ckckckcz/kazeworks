@@ -2,11 +2,12 @@
 import Navbar from "../components/Navbar.astro"
 import Banner from "../components/UI/Banner.astro"
 import Layout from '../layouts/Layout.astro';
+import Personal from "../assets/img/me.png"
 ---
 
 <Layout>
 	<Navbar />
-	<section class="bg-transparent lg:mt-20 mt-5">
+	<section class="bg-transparent lg:mt-24 lg:mb-28 mt-5">
 		<div class="py-8 px-4 mx-auto  max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
 			<div class="flex flex-col justify-center">
 				<div class="relative text-white border-2 border-gray-800 text-center w-56 mb-6 text-2xl font-semibold p-2">
@@ -30,7 +31,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 			<div>
-				<iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-96 shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<img class="mx-auto h-full rounded-lg lg:block hidden" src={Personal.src} />
 			</div>
 		</div>
 	</section>
