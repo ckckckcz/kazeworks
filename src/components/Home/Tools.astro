@@ -1,0 +1,71 @@
+---
+import Figma from "../../assets/img/tools/figma.png"
+import Vscode from "../../assets/img/tools/vscode.png"
+import Github from "../../assets/img/tools/github.png"
+---
+<section class="bg-black flex items-center justify-center">
+    <div class="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16 text-center">		
+        <div class="relative text-white border-2 border-gray-800 lg:w-56 mb-6 text-center text-sm w-36 font-semibold lg:text-2xl lg:p-2 p-1 mx-auto">
+            <span class="font-bold">The Goods I Use</span>
+            <div>
+                <span class="absolute -top-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
+                <span class="absolute -top-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+                <span class="absolute -bottom-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
+                <span class="absolute -bottom-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+            </div>
+        </div>
+        <h1 class="mb-16 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+            Exploring the Tools <br><span class="text-[#32fb00]">Behind My Project</span>
+        </h1>
+        <div class="grid grid-cols-1 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 items-center justify-center w-full lg:gap-10 gap-5">
+            <div class="relative flex items-center justify-between p-4 w-96 bg-[#121212] border border-[#303030] rounded-2xl">
+                <div class="flex items-center space-x-4 mb-12">
+                    <div class="bg-[#2a2a2a] w-16 h-16 flex items-center justify-center rounded-full">
+                        <img class="p-[22px]" src={Figma.src} alt="Rounded avatar">
+                    </div>                  
+                    <p class="text-white text-xl font-extrabold">Figma</p>
+                </div>
+                <!-- <div class="absolute top-4 right-4 bg-[#32fb00] text-black text-sm font-bold px-2 py-1 rounded-full">
+                    98%
+                </div> -->
+                <div class="absolute bottom-4 left-0 w-full px-4">
+                    <div class="w-full bg-gray-700 h-1 rounded-full">
+                        <div class="bg-[#32fb00] h-1 rounded-full" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>    
+            <div class="relative flex items-center justify-between p-4 w-96 bg-[#121212] border border-[#303030] rounded-2xl">
+                <div class="flex items-center space-x-4 mb-12">
+                    <div class="bg-[#2a2a2a] w-16 h-16 flex items-center justify-center rounded-full">
+                        <img class="p-[16px]" src={Vscode.src} alt="Rounded avatar">
+                    </div>                  
+                    <p class="text-white text-xl font-extrabold">Visual Studio Code</p>
+                </div>
+                <!-- <div class="absolute top-4 right-4 bg-[#32fb00] text-black text-sm font-bold px-2 py-1 rounded-full">
+                    98%
+                </div> -->
+                <div class="absolute bottom-4 left-0 w-full px-4">
+                    <div class="w-full bg-gray-700 h-1 rounded-full">
+                        <div class="bg-[#32fb00] h-1 rounded-full" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>    
+            <div class="relative flex items-center justify-between p-4 w-96 bg-[#121212] border border-[#303030] rounded-2xl">
+                <div class="flex items-center space-x-4 mb-12">
+                    <div class="bg-[#2a2a2a] w-16 h-16 flex items-center justify-center rounded-full">
+                        <img class="p-[px]" src={Github.src} alt="Rounded avatar">
+                    </div>                  
+                    <p class="text-white text-xl font-extrabold">Github</p>
+                </div>
+                <!-- <div class="absolute top-4 right-4 bg-[#32fb00] text-black text-sm font-bold px-2 py-1 rounded-full">
+                    98%
+                </div> -->
+                <div class="absolute bottom-4 left-0 w-full px-4">
+                    <div class="w-full bg-gray-700 h-1 rounded-full">
+                        <div class="bg-[#32fb00] h-1 rounded-full" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>    
+        </div>          
+    </div>
+</section>
