@@ -22,4 +22,8 @@ body{
     display: flex;
     white-space: nowrap;
     will-change: transform;
-  }
+}
+
+.bgFooter{
+    background-image: url("../img/Footer.png");
+}
