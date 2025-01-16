@@ -78,3 +78,43 @@ const scrollContainer2 = document.getElementById("scroll-container-2");
         cloneContent();
         animateScroll();
     }
+const scrollContainer3 = document.getElementById("scroll-container-3");
+    if (scrollContainer3) {
+        let scrollPosition = 0;
+
+        const animateScroll = () => {
+            scrollPosition -= 1;
+            scrollContainer3.style.transform = `translateX(${scrollPosition}px)`;
+
+            const firstChild = scrollContainer3.firstElementChild;
+            if (firstChild && firstChild.getBoundingClientRect().right < 0) {
+                scrollContainer3.appendChild(firstChild);
+                scrollPosition += firstChild.offsetWidth;
+            }
+
+            requestAnimationFrame(animateScroll);
+        };
+
+        const cloneContent = () => {
+            const children = Array.from(scrollContainer3.children);
+            children.forEach((child) => {
+                const clone = child.cloneNode(true);
+                scrollContainer3.appendChild(clone);
+            });
+        };
+
+        const items = [
+            `<span class="text-black lg:text-[35px] text-xl font-semibold">Front-End Developer</span>`,
+            `<span class="text-black lg:text-[35px] text-xl font-semibold">✦</span>`,
+            `<span class="text-black lg:text-[35px] text-xl font-semibold">UI/UX Designer</span>`,
+            `<span class="text-black lg:text-[35px] text-xl font-semibold">✦</span>`,
+        ];
+
+        for (let i = 0; i < 10; i++) {
+            items.forEach((item) => {
+                scrollContainer3.innerHTML += item;
+            });
+        }
+        cloneContent();
+        animateScroll();
+    }
