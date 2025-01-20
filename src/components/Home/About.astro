@@ -2,34 +2,37 @@
 import Personal from "../../assets/img/about.png"
 ---
 <section class="bg-black">
-    <div class="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16 ">
-        <div class="flex justify-center items-center">
-            <img class="h-full rounded-lg" src={Personal.src} />
-        </div>			
-        <div class="flex flex-col justify-center">
-            <div class="relative text-white border-2 border-gray-800 text-center lg:w-44 mb-6 lg:text-2xl text-sm w-24 font-semibold lg:p-2 p-1">
-                <span class="text-center font-bold">About Me</span>
-                <div>
-                    <span class="absolute -top-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
-                    <span class="absolute -top-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
-                    <span class="absolute -bottom-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
-                    <span class="absolute -bottom-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+    <section class="opacity-0 transform translate-y-10 transition duration-700">
+    
+        <div class="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16 ">
+            <div class="flex justify-center items-center">
+                <img class="h-full rounded-lg" src={Personal.src} />
+            </div>			
+            <div class="flex flex-col justify-center">
+                <div class="relative text-white border-2 border-gray-800 text-center lg:w-44 mb-6 lg:text-2xl text-sm w-24 font-semibold lg:p-2 p-1">
+                    <span class="text-center font-bold">About Me</span>
+                    <div>
+                        <span class="absolute -top-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
+                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+                        <span class="absolute -bottom-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
+                        <span class="absolute -bottom-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+                    </div>
+                </div>		
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">Who is <span class="text-[#32fb00]">Riovaldo Alfiyan Fahmi Rahman ???</span></h1>
+                <div class="flex flex-wrap lg:gap-4 gap-2 sm:flex-row justify-start">
+                    <div class="mb-4">
+                        <p class="text-md font-normal text-white opacity-70 lg:text-xl dark:text-gray-400">Hi! I’m Riovaldo Alfiyan Fahmi Rahman, a student at Malang State Polytechnic, majoring in Computer Engineering.</p>
+                        <br>
+                        <p class="text-md font-normal text-white opacity-70 lg:text-xl dark:text-gray-400">I have a strong interest in Front-End Web Development and am dedicated to creating smooth and interactive web experiences. I specialize in working with technologies such as React, TypeScript, JavaScript, Astro, and Tailwind to build clean, responsive, and user-friendly interfaces. Currently living in the beautiful country of Indonesia, I am actively pursuing my passion for technology.</p>        
+                    </div>
+                    <a href="#" class="inline-flex justify-center items-center lg:py-4 lg:px-7 py-3 px-4 text-base font-extrabold text-center text-white rounded-full border-2 border-gray-600 bg-black hover:bg-gray-900 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        Download CV
+                    </a>
                 </div>
-            </div>		
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">Who is <span class="text-[#32fb00]">Riovaldo Alfiyan Fahmi Rahman ???</span></h1>
-            <div class="flex flex-wrap lg:gap-4 gap-2 sm:flex-row justify-start">
-                <div class="mb-4">
-                    <p class="text-md font-normal text-white opacity-70 lg:text-xl dark:text-gray-400">Hi! I’m Riovaldo Alfiyan Fahmi Rahman, a student at Malang State Polytechnic, majoring in Computer Engineering.</p>
-                    <br>
-                    <p class="text-md font-normal text-white opacity-70 lg:text-xl dark:text-gray-400">I have a strong interest in Front-End Web Development and am dedicated to creating smooth and interactive web experiences. I specialize in working with technologies such as React, TypeScript, JavaScript, Astro, and Tailwind to build clean, responsive, and user-friendly interfaces. Currently living in the beautiful country of Indonesia, I am actively pursuing my passion for technology.</p>        
-                </div>
-                <a href="#" class="inline-flex justify-center items-center lg:py-4 lg:px-7 py-3 px-4 text-base font-extrabold text-center text-white rounded-full border-2 border-gray-600 bg-black hover:bg-gray-900 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                    Download CV
-                </a>
             </div>
         </div>
-    </div>
-    <div class="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16">
-        <hr class="h-px bg-white bg-opacity-15 border-0 dark:bg-gray-700">
-    </div> 
+        <div class="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16">
+            <hr class="h-px bg-white bg-opacity-15 border-0 dark:bg-gray-700">
+        </div> 
+    </section>
 </section>
