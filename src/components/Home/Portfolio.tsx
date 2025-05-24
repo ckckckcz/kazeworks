@@ -156,14 +156,16 @@ export default function Portfolio() {
     <section id="portfolio" ref={sectionRef} className="py-20 px-4 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <div className="text-left mb-16">
-            <div className="relative text-white border-2 border-gray-800 text-center items-start w-40 mx-auto mb-8 text-lg font-semibold p-2">
-              <span className="text-center font-bold">My Works!</span>
-              <div>
-                <span className="absolute -top-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
-                <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
-                <span className="absolute -bottom-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
-                <span className="absolute -bottom-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+          <div className="mb-14">
+            <div className="flex justify-start">
+              <div className="relative text-white border-2 border-gray-800 text-center lg:w-56 mb-6 lg:text-2xl text-sm w-36 font-semibold lg:p-2 p-1">
+                <span className="font-bold">The Goods I Use</span>
+                <div>
+                  <span className="absolute -top-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
+                  <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+                  <span className="absolute -bottom-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
+                  <span className="absolute -bottom-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+                </div>
               </div>
             </div>
 
