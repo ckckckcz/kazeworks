@@ -1,5 +1,7 @@
 ---
 import "../assets/css/globals.css";
+import Navbar from "../components/Navbar.astro"
+import Footer from "../components/Footer.astro"
 ---
 <!doctype html>
 <html lang="en">
@@ -14,7 +16,9 @@ import "../assets/css/globals.css";
 		<title>Kazeworks</title>
 	</head>
 	<body>
-		<slot />
+		<Navbar />
+			<slot />
+		<Footer />
 		<script src="../lib/Banner.js"></script>
 		<script src="../lib/TechPercentage.js"></script>
 		<script src="../lib/Animation.js"></script>

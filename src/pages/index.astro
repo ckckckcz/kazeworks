@@ -1,5 +1,4 @@
 ---
-import Navbar from "../components/Navbar.astro"
 import About from "../components/Home/About.astro"
 import Banner1 from "../components/UI/Banner_1.astro";
 import Banner2 from "../components/UI/Banner_2.astro";
@@ -8,13 +7,11 @@ import Tools from "../components/Home/Tools.astro"
 import Tech from "../components/Home/Tech.astro";
 import Portfolio from "../components/Home/Portfolio.astro"
 import Contact from "../components/Home/Contact.astro"
-import Footer from "../components/Footer.astro"
 import Layout from '../layouts/Layout.astro'
 import Personal from "../assets/img/me.png"
 ---
 
 <Layout>
-	<Navbar />
 	<section class="bg-transparent lg:mt-24 lg:mb-28 mt-5">
 		<section class="opacity-0 transform translate-y-10 transition duration-700">
 			<div class="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
@@ -53,5 +50,4 @@ import Personal from "../assets/img/me.png"
 	<Portfolio />
 	<Contact />
 	<Banner3 />
-	<Footer />
 </Layout>
