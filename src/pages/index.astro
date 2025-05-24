@@ -12,42 +12,86 @@ import Personal from "../assets/img/me.png"
 ---
 
 <Layout>
-	<section class="bg-transparent lg:mt-24 lg:mb-28 mt-5">
-		<section class="opacity-0 transform translate-y-10 transition duration-700">
-			<div class="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
-				<div class="flex flex-col justify-center">
-					<div class="relative text-white border-2 border-gray-800 text-center lg:w-56 mb-6 lg:text-2xl text-sm w-36 font-semibold lg:p-2 p-1">
-						<span class="text-center font-bold">Howdy Partner!</span>
-						<div>
-							<span class="absolute -top-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
-							<span class="absolute -top-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
-							<span class="absolute -bottom-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
-							<span class="absolute -bottom-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
-						</div>
-					</div>		
-					<h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-[#32fb00] md:text-5xl lg:text-6xl dark:text-white">I'm Riovaldo, <span class="text-white">Frontend Developer Based in Indonesia</span></h1>
-					<p class="lg:mb-8 mb-6 text-md font-normal text-white opacity-40 lg:text-xl dark:text-gray-400">Focused on building websites that not only look amazing but also provide a seamless and intuitive experience, making sure every interaction feels natural and engaging ✨</p>
-					<div class="flex flex-wrap lg:gap-4 gap-2 sm:flex-row justify-start">
-						<a href="#" class="inline-flex justify-center items-center lg:py-4 lg:px-7 py-3 px-4 text-base font-extrabold text-center text-black rounded-full bg-[#32fb00] hover:bg-[#57eb32] focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-							View My Work
-						</a>
-						<a href="#" class="inline-flex justify-center items-center lg:py-4 lg:px-7 py-3 px-4 text-base font-extrabold text-center text-white rounded-full border-2 border-gray-600 bg-black hover:bg-gray-900 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-							Download CV
-						</a>
-					</div>
-				</div>
-				<div class="flex justify-center items-center">
-					<img class="h-full rounded-lg lg:block hidden" src={Personal.src} />
-				</div>			
-			</div>
-		</section>
-	</section>
-	<Banner1 />
-	<About />
-	<Tools />
-	<Tech />
-	<Banner2 />
-	<Portfolio client:load />
-	<Contact />
-	<Banner3 />
+    <section class="bg-transparent lg:mt-24 lg:mb-28 mt-5">
+        <section class="opacity-0 transform translate-y-10 transition duration-700">
+            <div class="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+                <div class="flex flex-col justify-center">
+                    <div class="relative text-white border-2 border-gray-800 text-center lg:w-56 mb-6 lg:text-2xl text-sm w-36 font-semibold lg:p-2 p-1">
+                        <span class="text-center font-bold">Howdy Partner!</span>
+                        <div>
+                            <span class="absolute -top-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
+                            <span class="absolute -top-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+                            <span class="absolute -bottom-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
+                            <span class="absolute -bottom-1 -right-1 w-2 h-2 bg-[#32fb00]"></span>
+                        </div>
+                    </div>		
+                    <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-[#32fb00] md:text-5xl lg:text-6xl dark:text-white">I'm Riovaldo, <span class="text-white">Frontend Developer Based in Indonesia</span></h1>
+                    <p class="lg:mb-8 mb-6 text-md font-normal text-white opacity-40 lg:text-xl dark:text-gray-400">Focused on building websites that not only look amazing but also provide a seamless and intuitive experience, making sure every interaction feels natural and engaging ✨</p>
+                    <div class="flex flex-wrap lg:gap-4 gap-2 sm:flex-row justify-start">
+                        <a href="#" class="inline-flex justify-center items-center lg:py-4 lg:px-7 py-3 px-4 text-base font-extrabold text-center text-black rounded-full bg-[#32fb00] hover:bg-[#57eb32] focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                            View My Work
+                        </a>
+                        <a href="#" class="inline-flex justify-center items-center lg:py-4 lg:px-7 py-3 px-4 text-base font-extrabold text-center text-white rounded-full border-2 border-gray-600 bg-black hover:bg-gray-900 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img class="h-full rounded-lg lg:block hidden" src={Personal.src} />
+                </div>			
+            </div>
+        </section>
+    </section>
+    <Banner1 />
+    <About />
+    <Tools />
+    <Tech />
+    <Banner2 />
+    <Portfolio client:load />
+    <Contact />
+    <Banner3 />
+
+    <!-- Client-side script for full-page confetti -->
+    <script>
+        import confetti from 'canvas-confetti';
+
+        window.addEventListener('load', () => {
+            const duration = 5 * 100; // 5 seconds
+            const end = Date.now() + duration;
+
+            (function frame() {
+                // Left side burst
+                confetti({
+                    particleCount: 50,
+                    angle: 60,
+                    spread: 100,
+                    origin: { x: 0, y: 0.5 },
+                    colors: ['#32fb00', '#ffffff', '#000000'],
+                    startVelocity: 60
+                });
+                // Right side burst
+                confetti({
+                    particleCount: 50,
+                    angle: 120,
+                    spread: 100,
+                    origin: { x: 1, y: 0.5 },
+                    colors: ['#32fb00', '#ffffff', '#000000'],
+                    startVelocity: 60
+                });
+                // Top center burst
+                confetti({
+                    particleCount: 50,
+                    angle: 90,
+                    spread: 120,
+                    origin: { x: 0.5, y: 0 },
+                    colors: ['#32fb00', '#ffffff', '#000000'],
+                    startVelocity: 60
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })();
+        });
+    </script>
 </Layout>

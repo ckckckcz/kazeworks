@@ -156,8 +156,8 @@ export default function Portfolio() {
     <section id="portfolio" ref={sectionRef} className="py-20 px-4 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <div className="text-center mb-16">
-            <div className="relative text-white border-2 border-gray-800 text-center w-40 mx-auto mb-8 text-lg font-semibold p-2">
+          <div className="text-left mb-16">
+            <div className="relative text-white border-2 border-gray-800 text-center items-start w-40 mx-auto mb-8 text-lg font-semibold p-2">
               <span className="text-center font-bold">My Works!</span>
               <div>
                 <span className="absolute -top-1 -left-1 w-2 h-2 bg-[#32fb00]"></span>
@@ -174,7 +174,7 @@ export default function Portfolio() {
           </div>
 
           {/* Filter buttons */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {/* <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (
               <button
                 key={category}
@@ -184,7 +184,7 @@ export default function Portfolio() {
                 {category}
               </button>
             ))}
-          </div>
+          </div> */}
 
           {/* Projects grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
