@@ -5,10 +5,10 @@ import Typescript from "../../assets/img/tech/ts.png"
 import Javascript from "../../assets/img/tech/js.png"
 import Tailwind from "../../assets/img/tech/tailwind.png"
 ---
-<section class="bg-black flex items-right justify-right">
-    <div class="py-8 px-4 mx-auto max-w-screen-2xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16 ">		
+<section class="bg-black flex items-center justify-center py-16 px-4">
+      <div class="max-w-7xl mx-auto w-full">	
         <section class="opacity-0 transform translate-y-10 transition duration-700">
-            <div class="flex justify-end">
+            <div class="flex justify-start">
                 <div class="relative text-white border-2 border-gray-800 text-center lg:w-56 mb-6 lg:text-2xl text-sm w-36 font-semibold lg:p-2 p-1">
                     <span class="font-bold">The Goods I Use</span>
                     <div>
@@ -49,6 +49,87 @@ import Tailwind from "../../assets/img/tech/tailwind.png"
                         </div>
                     </div>      
                 </div>  
+                <!-- Next.js Card -->
+                <div class="relative w-full">
+                    <div class="absolute flex items-center justify-between p-4 lg:w-96 w-full  bg-gray-800 bg-opacity-60 rounded-2xl">
+                        <div class="flex items-center space-x-4 mb-12">
+                            <div class="bg-[#2a2a2a] w-16 h-16 flex items-center justify-center rounded-full">
+                                <img class="p-[22px]" src="https://raw.githubusercontent.com/vercel/next.js/canary/examples/blog/public/vercel.svg" alt="Next.js logo">
+                            </div>
+                            <p class="text-white text-xl font-extrabold">Next.js</p>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center justify-between p-4 lg:w-96  w-full md:w-[450px] bg-[#121212] hover:-rotate-6 border border-[#303030] rounded-2xl hover:shadow-xl transition-transform duration-300 ease-in-out">
+                        <div class="flex items-center space-x-4 mb-12">
+                            <div class="bg-[#2a2a2a] w-16 h-16 flex items-center justify-center rounded-full">
+                                <img class="p-[18px]" src="https://raw.githubusercontent.com/vercel/next.js/canary/examples/blog/public/vercel.svg" alt="Next.js logo">
+                            </div>
+                            <p class="text-white text-xl font-extrabold">Next.js</p>
+                        </div>
+                        <div id="percentage80" class="absolute top-4 right-4 bg-[#32fb00] text-black text-sm font-bold px-2 py-1 rounded-full">
+                            0%
+                        </div>
+                        <div class="absolute bottom-4 left-0 w-full px-4">
+                            <div class="w-full bg-gray-700 h-1 rounded-full overflow-hidden">
+                                <div id="progressBar80" class="bg-[#32fb00] h-1 rounded-full transition-all duration-1000 ease-out" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Laravel Card -->
+                <div class="relative w-full">
+                    <div class="absolute flex items-center justify-between p-4 lg:w-96 w-full  bg-gray-800 bg-opacity-60 rounded-2xl">
+                        <div class="flex items-center space-x-4 mb-12">
+                            <div class="bg-[#2a2a2a] w-16 h-16 flex items-center justify-center rounded-full">
+                                <img class="p-[22px]" src="https://laravel.com/img/logomark.min.svg" alt="Laravel logo">
+                            </div>
+                            <p class="text-white text-xl font-extrabold">Laravel</p>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center justify-between p-4 lg:w-96  w-full md:w-[450px] bg-[#121212] hover:rotate-6 border border-[#303030] rounded-2xl hover:shadow-xl transition-transform duration-300 ease-in-out">
+                        <div class="flex items-center space-x-4 mb-12">
+                            <div class="bg-[#2a2a2a] w-16 h-16 flex items-center justify-center rounded-full">
+                                <img class="p-[18px]" src="https://laravel.com/img/logomark.min.svg" alt="Laravel logo">
+                            </div>
+                            <p class="text-white text-xl font-extrabold">Laravel</p>
+                        </div>
+                        <div id="percentage70" class="absolute top-4 right-4 bg-[#32fb00] text-black text-sm font-bold px-2 py-1 rounded-full">
+                            0%
+                        </div>
+                        <div class="absolute bottom-4 left-0 w-full px-4">
+                            <div class="w-full bg-gray-700 h-1 rounded-full overflow-hidden">
+                                <div id="progressBar70" class="bg-[#32fb00] h-1 rounded-full transition-all duration-1000 ease-out" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rust Card -->
+                <div class="relative w-full">
+                    <div class="absolute flex items-center justify-between p-4 lg:w-96 w-full  bg-gray-800 bg-opacity-60 rounded-2xl">
+                        <div class="flex items-center space-x-4 mb-12">
+                            <div class="bg-[#2a2a2a] w-16 h-16 flex items-center justify-center rounded-full">
+                                <img class="p-[22px]" src="https://www.rust-lang.org/static/images/rust-logo-blk.svg" alt="Rust logo">
+                            </div>
+                            <p class="text-white text-xl font-extrabold">Rust</p>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center justify-between p-4 lg:w-96  w-full md:w-[450px] bg-[#121212] hover:-rotate-6 border border-[#303030] rounded-2xl hover:shadow-xl transition-transform duration-300 ease-in-out">
+                        <div class="flex items-center space-x-4 mb-12">
+                            <div class="bg-[#2a2a2a] w-16 h-16 flex items-center justify-center rounded-full">
+                                <img class="p-[18px]" src="https://www.rust-lang.org/static/images/rust-logo-blk.svg" alt="Rust logo">
+                            </div>
+                            <p class="text-white text-xl font-extrabold">Rust</p>
+                        </div>
+                        <div id="percentage60" class="absolute top-4 right-4 bg-[#32fb00] text-black text-sm font-bold px-2 py-1 rounded-full">
+                            0%
+                        </div>
+                        <div class="absolute bottom-4 left-0 w-full px-4">
+                            <div class="w-full bg-gray-700 h-1 rounded-full overflow-hidden">
+                                <div id="progressBar60" class="bg-[#32fb00] h-1 rounded-full transition-all duration-1000 ease-out" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="relative w-full">
                                         <div class="absolute flex items-center justify-between p-4 lg:w-96 w-full  bg-gray-800 bg-opacity-60 rounded-2xl">
                         <div class="flex items-center space-x-4 mb-12">
@@ -156,4 +237,38 @@ import Tailwind from "../../assets/img/tech/tailwind.png"
             </div>          
         </section>
         </div>
-</section> 
+</section>
+<script is:inline>
+    // Next.js
+    const nextPercent = 80;
+    const nextBar = document.getElementById('progressBar80');
+    const nextLabel = document.getElementById('percentage80');
+    if (nextBar && nextLabel) {
+        setTimeout(() => {
+            nextBar.style.width = nextPercent + '%';
+            nextLabel.textContent = nextPercent + '%';
+        }, 300);
+    }
+
+    // Laravel
+    const laravelPercent = 70;
+    const laravelBar = document.getElementById('progressBar70');
+    const laravelLabel = document.getElementById('percentage70');
+    if (laravelBar && laravelLabel) {
+        setTimeout(() => {
+            laravelBar.style.width = laravelPercent + '%';
+            laravelLabel.textContent = laravelPercent + '%';
+        }, 300);
+    }
+
+    // Rust
+    const rustPercent = 60;
+    const rustBar = document.getElementById('progressBar60');
+    const rustLabel = document.getElementById('percentage60');
+    if (rustBar && rustLabel) {
+        setTimeout(() => {
+            rustBar.style.width = rustPercent + '%';
+            rustLabel.textContent = rustPercent + '%';
+        }, 300);
+    }
+</script>
