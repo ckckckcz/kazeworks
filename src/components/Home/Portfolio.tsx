@@ -26,15 +26,25 @@ export default function Portfolio() {
   }, []);
 
   const projects = [
+    // {
+    //   id: 1,
+    //   title: "GrowPlus",
+    //   description: "Platform pengembangan diri dan produktivitas untuk membantu mencapai tujuan dengan fitur personalisasi dan progress tracking.",
+    //   image: "/placeholder.svg?height=400&width=600",
+    //   category: "Website",
+    //   technologies: ["React", "Node.js", "MongoDB"],
+    //   liveUrl: "",
+    //   githubUrl: "https://github.com/ckckckcz/growplus",
+    // },
     {
-      id: 1,
-      title: "GrowPlus",
-      description: "Platform pengembangan diri dan produktivitas untuk membantu mencapai tujuan dengan fitur personalisasi dan progress tracking.",
+      id: 9,
+      title: "Tandur",
+      description: "Aplikasi kuis dan tantangan pengembangan skill untuk meningkatkan kemampuan profesional dan hobi pengguna.",
       image: "/placeholder.svg?height=400&width=600",
-      category: "Web App",
-      technologies: ["React", "Node.js", "MongoDB"],
-      liveUrl: "", // Kalau ada link live, bisa kamu tambahkan
-      githubUrl: "https://github.com/ckckckcz/growplus",
+      category: "Website",
+      technologies: ["React", "Node.js", "Express"],
+      liveUrl: "",
+      githubUrl: "https://tandur.vercel.app/",
     },
     {
       id: 2,
@@ -43,7 +53,7 @@ export default function Portfolio() {
       image: "/placeholder.svg?height=400&width=600",
       category: "Website",
       technologies: ["Next.js", "Tailwind CSS"],
-      liveUrl: "",
+      liveUrl: "https://warisankita.vercel.app/",
       githubUrl: "https://github.com/ckckckcz/Warisan-Kita",
     },
     {
@@ -53,7 +63,7 @@ export default function Portfolio() {
       image: "/placeholder.svg?height=400&width=600",
       category: "Website",
       technologies: ["Next.js", "React"],
-      liveUrl: "",
+      liveUrl: "https://soraofficial.vercel.app/",
       githubUrl: "https://github.com/ckckckcz/Sora-Official",
     },
     {
@@ -61,80 +71,30 @@ export default function Portfolio() {
       title: "RedHope",
       description: "Platform komunitas yang menghubungkan pengguna untuk berbagai aktivitas sosial dan donasi secara transparan.",
       image: "/placeholder.svg?height=400&width=600",
-      category: "Web App",
+      category: "Website",
       technologies: ["Vue.js", "Firebase"],
-      liveUrl: "",
+      liveUrl: "redhope-vert.vercel.app",
       githubUrl: "https://github.com/ckckckcz/RedHope",
     },
     {
       id: 5,
-      title: "BahasaKu",
+      title: "Pusaka Bahasa",
       description: "Aplikasi pembelajaran bahasa lokal dengan fitur interaktif dan kuis untuk meningkatkan kemampuan bahasa pengguna.",
       image: "/placeholder.svg?height=400&width=600",
-      category: "Mobile App",
+      category: "Website",
       technologies: ["React Native", "Expo"],
-      liveUrl: "",
+      liveUrl: "pusakabahasa.vercel.app",
       githubUrl: "https://github.com/ckckckcz/BahasaKu",
     },
     {
       id: 6,
-      title: "Hackthon-JTI",
+      title: "Keadilan Bersama",
       description: "Proyek hasil hackathon dari jurusan Teknik Informatika yang mengusung solusi kreatif berbasis teknologi terbaru.",
       image: "/placeholder.svg?height=400&width=600",
-      category: "Web App",
+      category: "Website",
       technologies: ["React", "Node.js"],
-      liveUrl: "",
+      liveUrl: "https://keadilan-bersama.vercel.app/",
       githubUrl: "https://github.com/ckckckcz/Hackthon-JTI",
-    },
-    {
-      id: 7,
-      title: "Grit-and-Grind",
-      description: "Website motivasi dan pengembangan mental untuk meningkatkan ketekunan dan kerja keras pengguna.",
-      image: "/placeholder.svg?height=400&width=600",
-      category: "Website",
-      technologies: ["Next.js", "Tailwind CSS"],
-      liveUrl: "",
-      githubUrl: "https://github.com/ckckckcz/Grit-and-Grind",
-    },
-    {
-      id: 8,
-      title: "pusaka-bahasa",
-      description: "Platform pelestarian bahasa daerah dengan fitur kursus interaktif dan komunitas pembelajar bahasa.",
-      image: "/placeholder.svg?height=400&width=600",
-      category: "Web App",
-      technologies: ["React", "Firebase"],
-      liveUrl: "",
-      githubUrl: "https://github.com/ckckckcz/pusaka-bahasa",
-    },
-    {
-      id: 9,
-      title: "SkillQuest",
-      description: "Aplikasi kuis dan tantangan pengembangan skill untuk meningkatkan kemampuan profesional dan hobi pengguna.",
-      image: "/placeholder.svg?height=400&width=600",
-      category: "Web App",
-      technologies: ["React", "Node.js", "Express"],
-      liveUrl: "",
-      githubUrl: "https://github.com/ckckckcz/SkillQuest",
-    },
-    {
-      id: 10,
-      title: "kajekaito",
-      description: "Sebuah proyek dengan fokus pada pendidikan atau teknologi (harap koreksi dan update deskripsi).",
-      image: "/placeholder.svg?height=400&width=600",
-      category: "Website",
-      technologies: ["Next.js", "React"],
-      liveUrl: "",
-      githubUrl: "https://github.com/ckckckcz/kajekaito",
-    },
-    {
-      id: 11,
-      title: "Nutri-Delight",
-      description: "Aplikasi untuk membantu pengguna memantau asupan nutrisi dengan rekomendasi menu sehat dan personalisasi diet.",
-      image: "/placeholder.svg?height=400&width=600",
-      category: "Mobile App",
-      technologies: ["React Native", "Firebase"],
-      liveUrl: "",
-      githubUrl: "https://github.com/ckckckcz/Nutri-Delight",
     },
     {
       id: 12,
@@ -143,12 +103,12 @@ export default function Portfolio() {
       image: "/placeholder.svg?height=400&width=600",
       category: "Website",
       technologies: ["Vue.js", "Laravel"],
-      liveUrl: "",
+      liveUrl: "https://bentokaito.vercel.app/",
       githubUrl: "https://github.com/ckckckcz/Bento-Kaito",
     },
   ];
 
-  const categories = ["All", "Website", "Web App", "Mobile App"];
+  const categories = ["All", "Website", "Website", "Website"];
 
   const filteredProjects = activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter);
 
@@ -231,7 +191,7 @@ export default function Portfolio() {
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
                     </a>
-                    <a
+                    {/* <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -239,7 +199,7 @@ export default function Portfolio() {
                     >
                       <Github className="w-4 h-4" />
                       Code
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
